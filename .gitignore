@@ -1,0 +1,9 @@
+# To print tables for docstrings
+table.py
+
+# Cache
+__pycache__
+*.pyc
+
+# Other
+test.py
