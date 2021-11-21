@@ -3,7 +3,6 @@ Write a program to create a data series and then change the indexes of the Serie
 """
 
 import pandas as pd
-import numpy as np
 
 series = pd.Series(
     data=[1, 2, 3, 4, 5, 6, 7, 8], index=["A", "B", "C", "D", "E", "F", "G", "H"]
