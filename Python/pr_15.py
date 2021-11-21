@@ -7,6 +7,8 @@ Employee CSV files contains (Empno, Name, Desgination, Salary) of 6 employees.
 
 import pandas as pd
 
-df = pd.read_csv("./employees.csv", index_col="EmpNo")
+df = pd.read_csv(
+    "./employees.csv", header=0, names=["EmpId", "EmpName", "Desg", "EmpSal"]
+)
 print(df)
-print(f"Maximum Salary: {df.Salary.max()}")
+print(f"Maximum Salary: {df.loc[:, 'EmpSal'].max()}")
